@@ -15,8 +15,6 @@ describe('Checkout Rules',  () => {
 
         const cartResult = await calculateCheckoutDiscount(newUserCart);
 
-        console.log('Cart Result: ', cartResult);
-
         expect(cartResult.totalBeforeDiscount).toBe(200);
         expect(cartResult.discount).toBe(40);
         expect(cartResult.payableAmount).toBe(160);
@@ -34,8 +32,6 @@ describe('Checkout Rules',  () => {
         });
 
         const cartResult = await calculateCheckoutDiscount(newUserCart);
-
-        console.log('Cart Result: ', cartResult);
 
         expect(cartResult.totalBeforeDiscount).toBe(200);
         expect(cartResult.discount).toBe(0);
