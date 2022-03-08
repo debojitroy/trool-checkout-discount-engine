@@ -32,3 +32,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 /.idea/
+!/src/rule-files/~$CheckoutRules.xlsx

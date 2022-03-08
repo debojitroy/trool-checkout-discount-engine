@@ -1,0 +1,11 @@
+,,
+Table: Carts,Condition,Action
+,isNewUser == $param,applyDiscountPercent($param)
+New User - Flat 20% Discount,TRUE,20
+,,
+,,
+,,
+,,
+,,
+,,
+,,
