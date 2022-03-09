@@ -1,11 +1,19 @@
-,,
-Table: Carts,Condition,Action
-,isNewUser == $param,applyDiscountPercent($param)
-New User - Flat 20% Discount,TRUE,20
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+﻿,,,,
+Table: Carts,Condition,Condition,Condition,Action
+,isNewUser == $param,totalBeforeDiscount >= $param,coupon == $param,applyDiscountPercent($param)
+New User - Flat 20% Discount,TRUE,,,20
+Existing User - Order Value > 1000,,1000,,10
+WelcomeBack Coupon,,,Coupons.WELCOMEBACK,5
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+Import: Coupons,,,,
+WELCOMEBACK,“WELCOMEBACK”,,,
+,,,,
+,,,,
+,,,,
+,,,,
